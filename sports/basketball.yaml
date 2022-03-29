@@ -6,8 +6,6 @@ info:
   description: ""
 
 servers:
-  - url: http://localhost
-  - url: https://localhost
   - url: '{custom}'
     variables:
       custom:

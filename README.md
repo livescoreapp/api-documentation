@@ -45,13 +45,18 @@ Once started, the Swagger API documentation is available at http://localhost
 <img src="assets/swagger.png"/>
 
 
-### Use Swagger
+### Using Swagger
 
 You can use the dropdown in the top right area of Swagger to select your sport.
 Please also open this sport inside the Live Score Desktop App.
 
 Set a custom Authorization Token in the Live Score Desktop App, enable the API and start everything with the blue start button.
 Now add this token to Swagger by using the Authorize button on the top of the page.
+
+Please also copy the correct hostname from the Live Score Desktop app.
+There should usually be an output like "API started with: http://192.x.x.x:8080"
+This is the IP address of your Desktop App (within the same network as your Swagger machine) along with your custom port configuration.
+Use this full domain and port and copy it in the server area on the top of the Swagger page.
 
 You can now simply open every request, click on "Try it out" and execute the request.
 
