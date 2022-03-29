@@ -54,8 +54,10 @@ Set a custom Authorization Token in the Live Score Desktop App, enable the API a
 Now add this token to Swagger by using the Authorize button on the top of the page.
 
 You can now simply open every request, click on "Try it out" and execute the request.
+
 Simple POST requests should automatically trigger an action within Live Score.
-Some command however, require additional data, which need to be sent as JSON payload.
+
+Some commands however, require additional data, which need to be sent as JSON payload.
 These commands already show a prepared JSON structure, that you can adjust before executing the request.
 
 
