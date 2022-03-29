@@ -8,6 +8,7 @@ The API is integrated in the Live Score Desktop App (www.live-score-app.com) and
 ## Authorization
 
 You can create a custom Authorization Token within the Desktop App of Live Score.
+
 If you build a custom client using our REST API, please send this token as "Authorization" header within every single request.
 
 
@@ -15,7 +16,11 @@ If you build a custom client using our REST API, please send this token as "Auth
 ## Versioning
 
 Every sport has its own version.
+
 The current version of the Desktop App can be asked with a simple `/version` request.
+
+Please use this repository, to get the correct documentation for the matching Live Score Desktop App version.
+
 
 
 ## Swagger Setup
@@ -33,6 +38,7 @@ docker-compose up -d
 ```
 
 This will download the Docker image and start the container.
+
 Once started, the Swagger API documentation is available at http://localhost
 
 
