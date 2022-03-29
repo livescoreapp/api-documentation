@@ -34,10 +34,7 @@ This will download the Docker image and start the container.
 Once started, the Swagger API documentation is available at http://localhost
 
 
-
-[<img src="https://raw.githubusercontent.com/wiki/livescoreapp/api-documentation/assets/swagger.png">]()
-
-
+<img src="assets/swagger.png"/>
 
 
 
