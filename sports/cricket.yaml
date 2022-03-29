@@ -1,0 +1,436 @@
+openapi: "3.0.0"
+
+info:
+  title: "Live Score Cricket API"
+  version: "1.0"
+  description: ""
+
+servers:
+  - url: http://localhost
+  - url: https://localhost
+  - url: '{custom}'
+    variables:
+      custom:
+        default: https://localhost
+
+externalDocs:
+  description: "Find out more about Live Score"
+  url: "https://www.live-score-app.com"
+
+paths:
+
+  /version:
+    get:
+      tags:
+        - "Version"
+      summary: "Get the API version"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /data:
+    get:
+      tags:
+        - "Game"
+      summary: "Get the data of the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /game/start:
+    post:
+      tags:
+        - "Game"
+      summary: "Starts the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/end:
+    post:
+      tags:
+        - "Game"
+      summary: "Ends the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/reset:
+    post:
+      tags:
+        - "Game"
+      summary: "Resets the current game. Use this for back-to-back games."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /scoreboards/toggle:
+    post:
+      tags:
+        - "Game"
+      summary: "Shows/Hides the layouts"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /inning/up:
+    post:
+      tags:
+        - "Inning"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /inning/down:
+    post:
+      tags:
+        - "Inning"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /inning/side/change:
+    post:
+      tags:
+        - "Inning"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /batter/1:
+    post:
+      tags:
+        - "Batter"
+      summary: "Sets a new Batter 1"
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  default: ""
+      responses:
+        "200":
+          description: "successful operation"
+  /batter/2:
+    post:
+      tags:
+        - "Batter"
+      summary: "Sets a new Batter 2"
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  default: ""
+      responses:
+        "200":
+          description: "successful operation"
+  /batter/switch:
+    post:
+      tags:
+        - "Batter"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /bowler:
+    post:
+      tags:
+        - "Bowler"
+      summary: "Sets a new Bowler"
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  default: ""
+      responses:
+        "200":
+          description: "successful operation"
+
+  /over/up:
+    post:
+      tags:
+        - "Overs"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /over/down:
+    post:
+      tags:
+        - "Overs"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /balls/six/up:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/four/up:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/run/up:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/run/down:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/wide/up:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/wide/down:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/noball/up:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/noball/down:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/bye/up:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/bye/down:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/legbye/up:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/legbye/down:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/dotball/down:
+    post:
+      tags:
+        - "Delivery"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/complete:
+    post:
+      tags:
+        - "Delivery"
+      summary: "Completes the delivery with the current balls"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/complete/free-delivery:
+    post:
+      tags:
+        - "Delivery"
+      summary: "Completes the delivery with the current balls as free delivery"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/reset:
+    post:
+      tags:
+        - "Delivery"
+      summary: "Resets the balls of the prepared delivery"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /wicket/up:
+    post:
+      tags:
+        - "Wickets"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /wicket/down:
+    post:
+      tags:
+        - "Wickets"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /runout/up:
+    post:
+      tags:
+        - "Runout"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /runout/down:
+    post:
+      tags:
+        - "Runout"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /free-hit/visibility/toggle:
+    post:
+      tags:
+        - "Displays"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /out/visibility/toggle:
+    post:
+      tags:
+        - "Displays"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+
+components:
+  securitySchemes:
+    API:
+      type: apiKey
+      in: header
+      name: Authorization

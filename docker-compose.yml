@@ -1,0 +1,15 @@
+version: "3.8"
+
+
+services:
+
+  swagger:
+      image: swaggerapi/swagger-ui
+      container_name: swagger
+      ports:
+        - "80:8080"
+      volumes:
+        - "./sports:/usr/share/nginx/html/sports"
+      environment:
+        URLS: "[ { name: 'Baseball API', url: '/sports/baseball.yaml' }, { name: 'Basketball API', url: '/sports/basketball.yaml' }, { name: 'Cricket API', url: '/sports/cricket.yaml' }, { name: 'Football API', url: '/sports/football.yaml' }, { name: 'Handball API', url: '/sports/handball.yaml' }, { name: 'Hockey API', url: '/sports/hockey.yaml' }, { name: 'MMA/Wrestling API', url: '/sports/mma.yaml' }, { name: 'Multi Sport API', url: '/sports/multisport.yaml' }, { name: 'Rugby API', url: '/sports/rugby.yaml' }, { name: 'Soccer API', url: '/sports/soccer.yaml' }, { name: 'Tennis API', url: '/sports/tennis.yaml' } ]"
+        PERSIST_AUTHORIZATION: "true"

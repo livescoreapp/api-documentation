@@ -1,0 +1,395 @@
+openapi: "3.0.0"
+
+info:
+  title: "Live Score Tennis API"
+  version: "1.0"
+  description: ""
+
+servers:
+  - url: http://localhost
+  - url: https://localhost
+  - url: '{custom}'
+    variables:
+      custom:
+        default: https://localhost
+
+externalDocs:
+  description: "Find out more about Live Score"
+  url: "https://www.live-score-app.com"
+
+paths:
+
+  /version:
+    get:
+      tags:
+        - "Version"
+      summary: "Get the API version"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /data:
+    get:
+      tags:
+        - "Game"
+      summary: "Get the data of the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /game/start:
+    post:
+      tags:
+        - "Game"
+      summary: "Starts the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/end:
+    post:
+      tags:
+        - "Game"
+      summary: "Ends the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/reset:
+    post:
+      tags:
+        - "Game"
+      summary: "Resets the current game. Use this for back-to-back games."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /scoreboards/toggle:
+    post:
+      tags:
+        - "Game"
+      summary: "Shows/Hides the layouts"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /set/up:
+    post:
+      tags:
+        - "Sets"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /set/down:
+    post:
+      tags:
+        - "Sets"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /game/away/up:
+    post:
+      tags:
+        - "Games"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/away/down:
+    post:
+      tags:
+        - "Games"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/home/up:
+    post:
+      tags:
+        - "Games"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/home/down:
+    post:
+      tags:
+        - "Games"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /point/away/0:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/away/15:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/away/30:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/away/40:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/away/ad:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/home/0:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/home/15:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/home/30:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/home/40:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /point/home/ad:
+    post:
+      tags:
+        - "Points"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /tiebreak/away/up:
+    post:
+      tags:
+        - "Tiebreak"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /tiebreak/away/down:
+    post:
+      tags:
+        - "Tiebreak"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /tiebreak/home/up:
+    post:
+      tags:
+        - "Tiebreak"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /tiebreak/home/down:
+    post:
+      tags:
+        - "Tiebreak"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /serve/away:
+    post:
+      tags:
+        - "Serve"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /serve/home:
+    post:
+      tags:
+        - "Serve"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /serve/speed/arm:
+    post:
+      tags:
+        - "Serve Speed"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /serve/speed/reset:
+    post:
+      tags:
+        - "Serve Speed"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /serve/speed/set:
+    post:
+      tags:
+        - "Serve Speed"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                speed:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+
+  /breakpoint/toggle:
+    post:
+      tags:
+        - "Displays"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /tiebreak/toggle:
+    post:
+      tags:
+        - "Displays"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /matchpoint/toggle:
+    post:
+      tags:
+        - "Displays"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /setpoint/toggle:
+    post:
+      tags:
+        - "Displays"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+components:
+  securitySchemes:
+    API:
+      type: apiKey
+      in: header
+      name: Authorization

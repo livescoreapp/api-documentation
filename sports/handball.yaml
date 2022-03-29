@@ -1,0 +1,477 @@
+openapi: "3.0.0"
+
+info:
+  title: "Live Score Handball API"
+  version: "1.0"
+  description: ""
+
+servers:
+  - url: http://localhost
+  - url: https://localhost
+  - url: '{custom}'
+    variables:
+      custom:
+        default: https://localhost
+
+externalDocs:
+  description: "Find out more about Live Score"
+  url: "https://www.live-score-app.com"
+
+paths:
+
+  /version:
+    get:
+      tags:
+        - "Version"
+      summary: "Get the API version"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /data:
+    get:
+      tags:
+        - "Game"
+      summary: "Get the data of the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /game/start:
+    post:
+      tags:
+        - "Game"
+      summary: "Starts the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/end:
+    post:
+      tags:
+        - "Game"
+      summary: "Ends the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/reset:
+    post:
+      tags:
+        - "Game"
+      summary: "Resets the current game. Use this for back-to-back games."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /scoreboards/toggle:
+    post:
+      tags:
+        - "Game"
+      summary: "Shows/Hides the layouts"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /period/up:
+    post:
+      tags:
+        - "Periods"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /period/down:
+    post:
+      tags:
+        - "Periods"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /score/away/up:
+    post:
+      tags:
+        - "Scores"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/away/down:
+    post:
+      tags:
+        - "Scores"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/home/up:
+    post:
+      tags:
+        - "Scores"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/home/down:
+    post:
+      tags:
+        - "Scores"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /emptygoal/away/visibility/toggle:
+    post:
+      tags:
+        - "Empty Goals"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /emptygoal/home/visibility/toggle:
+    post:
+      tags:
+        - "Empty Goals"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /foul/away/up:
+    post:
+      tags:
+        - "Fouls"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /foul/away/down:
+    post:
+      tags:
+        - "Fouls"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /foul/home/up:
+    post:
+      tags:
+        - "Fouls"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /foul/home/down:
+    post:
+      tags:
+        - "Fouls"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /time/start:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/stop:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/toggle:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/reset:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/set:
+    post:
+      tags:
+        - "Time"
+      summary: "Sets the game time"
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                seconds:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /time/minutes/up:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/minutes/down:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/seconds/up:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/seconds/down:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+
+  /exclusion/away/player/1/minutes/2:
+    post:
+      tags:
+        - "Exclusions"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                playerNr:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /exclusion/away/player/1/minutes/2+2:
+    post:
+      tags:
+        - "Exclusions"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                playerNr:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /exclusion/away/player/2/minutes/2:
+    post:
+      tags:
+        - "Exclusions"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                playerNr:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /exclusion/away/player/2/minutes/2+2:
+    post:
+      tags:
+        - "Exclusions"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                playerNr:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /exclusion/home/player/1/minutes/2:
+    post:
+      tags:
+        - "Exclusions"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                playerNr:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /exclusion/home/player/1/minutes/2+2:
+    post:
+      tags:
+        - "Exclusions"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                playerNr:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /exclusion/home/player/2/minutes/2:
+    post:
+      tags:
+        - "Exclusions"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                playerNr:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /exclusion/home/player/2/minutes/2+2:
+    post:
+      tags:
+        - "Exclusions"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                playerNr:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /buzzer/play:
+    post:
+      tags:
+        - "Buzzer"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+components:
+  securitySchemes:
+    API:
+      type: apiKey
+      in: header
+      name: Authorization

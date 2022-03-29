@@ -1,0 +1,531 @@
+openapi: "3.0.0"
+
+info:
+  title: "Live Score Basketball API"
+  version: "1.0"
+  description: ""
+
+servers:
+  - url: http://localhost
+  - url: https://localhost
+  - url: '{custom}'
+    variables:
+      custom:
+        default: https://localhost
+
+externalDocs:
+  description: "Find out more about Live Score"
+  url: "https://www.live-score-app.com"
+
+paths:
+
+  /version:
+    get:
+      tags:
+        - "Version"
+      summary: "Get the API version"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /data:
+    get:
+      tags:
+        - "Game"
+      summary: "Get the data of the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /game/start:
+    post:
+      tags:
+        - "Game"
+      summary: "Starts the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/end:
+    post:
+      tags:
+        - "Game"
+      summary: "Ends the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/reset:
+    post:
+      tags:
+        - "Game"
+      summary: "Resets the current game. Use this for back-to-back games."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /scoreboards/toggle:
+    post:
+      tags:
+        - "Game"
+      summary: "Shows/Hides the layouts"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /period/up:
+    post:
+      tags:
+        - "Periods"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /period/down:
+    post:
+      tags:
+        - "Periods"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /score/away/regular/up:
+    post:
+      tags:
+        - "Scores"
+      summary: "Add a regular point for the away team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/away/regular/down:
+    post:
+      tags:
+        - "Scores"
+      summary: "Remove a regular point from the away team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/away/3point/up:
+    post:
+      tags:
+        - "Scores"
+      summary: "Add a 3-point to the away team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/away/3point/down:
+    post:
+      tags:
+        - "Scores"
+      summary: "Remove a 3-point from the away team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/away/foulshot/up:
+    post:
+      tags:
+        - "Scores"
+      summary: "Add a foul shot to the away team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/away/foulshot/down:
+    post:
+      tags:
+        - "Scores"
+      summary: "Remove a foul shot from the away team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/home/regular/up:
+    post:
+      tags:
+        - "Scores"
+      summary: "Add a regular point for the home team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/home/regular/down:
+    post:
+      tags:
+        - "Scores"
+      summary: "Remove a regular point from the home team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/home/3point/up:
+    post:
+      tags:
+        - "Scores"
+      summary: "Add a 3-point to the home team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/home/3point/down:
+    post:
+      tags:
+        - "Scores"
+      summary: "Remove a 3-point from the home team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/home/foulshot/up:
+    post:
+      tags:
+        - "Scores"
+      summary: "Add a foul shot to the home team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /score/home/foulshot/down:
+    post:
+      tags:
+        - "Scores"
+      summary: "Remove a foul shot from the home team."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /time/start:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/stop:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/toggle:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/reset:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/set:
+    post:
+      tags:
+        - "Time"
+      summary: "Sets the game time"
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                seconds:
+                  default: 60
+      responses:
+        "200":
+          description: "successful operation"
+  /time/minutes/up:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/minutes/down:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/seconds/up:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /time/seconds/down:
+    post:
+      tags:
+        - "Time"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /shotclock/start:
+    post:
+      tags:
+        - "Shotclock"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /shotclock/stop:
+    post:
+      tags:
+        - "Shotclock"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /shotclock/reset/1:
+    post:
+      tags:
+        - "Shotclock"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /shotclock/reset/2:
+    post:
+      tags:
+        - "Shotclock"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /shotclock/seconds/up:
+    post:
+      tags:
+        - "Shotclock"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /shotclock/seconds/down:
+    post:
+      tags:
+        - "Shotclock"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /shotclock/visibility/toggle:
+    post:
+      tags:
+        - "Shotclock"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /timeouts/away/up:
+    post:
+      tags:
+        - "Timeouts"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /timeouts/away/down:
+    post:
+      tags:
+        - "Timeouts"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /timeouts/home/up:
+    post:
+      tags:
+        - "Timeouts"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /timeouts/home/down:
+    post:
+      tags:
+        - "Timeouts"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /bonus/away/toggle:
+    post:
+      tags:
+        - "Bonus"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /bonus/home/toggle:
+    post:
+      tags:
+        - "Bonus"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /fouls/away/up:
+    post:
+      tags:
+        - "Fouls"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /fouls/away/down:
+    post:
+      tags:
+        - "Fouls"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /fouls/home/up:
+    post:
+      tags:
+        - "Fouls"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /fouls/home/down:
+    post:
+      tags:
+        - "Fouls"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /intermission/visibility/toggle:
+    post:
+      tags:
+        - "Intermission"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /buzzer/play:
+    post:
+      tags:
+        - "Buzzer"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+components:
+  securitySchemes:
+    API:
+      type: apiKey
+      in: header
+      name: Authorization

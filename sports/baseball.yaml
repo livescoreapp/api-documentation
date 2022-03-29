@@ -1,0 +1,507 @@
+openapi: "3.0.0"
+
+info:
+  title: "Live Score Baseball API"
+  version: "1.0"
+  description: ""
+
+servers:
+  - url: http://localhost
+  - url: https://localhost
+  - url: '{custom}'
+    variables:
+      custom:
+        default: https://localhost
+
+externalDocs:
+  description: "Find out more about Live Score"
+  url: "https://www.live-score-app.com"
+
+paths:
+
+  /version:
+    get:
+      tags:
+        - "Version"
+      summary: "Get the API version"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /data:
+    get:
+      tags:
+        - "Game"
+      summary: "Get the data of the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /game/start:
+    post:
+      tags:
+        - "Game"
+      summary: "Starts the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/end:
+    post:
+      tags:
+        - "Game"
+      summary: "Ends the current game"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /game/reset:
+    post:
+      tags:
+        - "Game"
+      summary: "Resets the current game. Use this for back-to-back games."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /scoreboards/toggle:
+    post:
+      tags:
+        - "Game"
+      summary: "Shows/Hides the layouts"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /runs/away/up:
+    post:
+      tags:
+        - "Runs"
+      summary: "Increase the Runs"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /runs/away/down:
+    post:
+      tags:
+        - "Runs"
+      summary: "Decrease the Runs"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /runs/home/up:
+    post:
+      tags:
+        - "Runs"
+      summary: "Increase the Runs"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /runs/home/down:
+    post:
+      tags:
+        - "Runs"
+      summary: "Decrease the Runs"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /inning/up:
+    post:
+      tags:
+        - "Inning"
+      summary: "Increase the Innings"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /inning/down:
+    post:
+      tags:
+        - "Inning"
+      summary: "Decrease the Innings"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /inning/side/change:
+    post:
+      tags:
+        - "Inning"
+      summary: "Switch between TOP and BOTTOM of the current Inning"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /strikes/up:
+    post:
+      tags:
+        - "Strikes"
+      summary: "Increase the Strikes"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /strikes/down:
+    post:
+      tags:
+        - "Strikes"
+      summary: "Decrease the Strikes"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /balls/up:
+    post:
+      tags:
+        - "Balls"
+      summary: "Increase the Balls"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /balls/down:
+    post:
+      tags:
+        - "Balls"
+      summary: "Decrease the Balls"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /outs/up:
+    post:
+      tags:
+        - "Outs"
+      summary: "Increase the Outs"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /outs/down:
+    post:
+      tags:
+        - "Outs"
+      summary: "Decrease the Outs"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /batting/next:
+    post:
+      tags:
+        - "Batters"
+      summary: "Moves to the next at bat and reset Strikes and Balls."
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /batting/pos/up:
+    post:
+      tags:
+        - "Batters"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /batting/pos/down:
+    post:
+      tags:
+        - "Batters"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /bases/base1/toggle:
+    post:
+      tags:
+        - "Bases"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /bases/base2/toggle:
+    post:
+      tags:
+        - "Bases"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /bases/base3/toggle:
+    post:
+      tags:
+        - "Bases"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /pitching/count/up:
+    post:
+      tags:
+        - "Pitching"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /pitching/count/down:
+    post:
+      tags:
+        - "Pitching"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /pitching/count/reset:
+    post:
+      tags:
+        - "Pitching"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /pitching/speed/arm:
+    post:
+      tags:
+        - "Pitching"
+      summary: "Arms the pitch speed detection"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /pitching/speed/reset:
+    post:
+      tags:
+        - "Pitching"
+      summary: "Resets the current pitch speed"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /pitching/speed/set:
+    post:
+      tags:
+        - "Pitching"
+      summary: "Sets the pitch speed"
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                speed:
+                  default: "60"
+      responses:
+        "200":
+          description: "successful operation"
+
+  /hits/away/up:
+    post:
+      tags:
+        - "Hits"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /hits/away/down:
+    post:
+      tags:
+        - "Hits"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /hits/home/up:
+    post:
+      tags:
+        - "Hits"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /hits/home/down:
+    post:
+      tags:
+        - "Hits"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /errors/away/up:
+    post:
+      tags:
+        - "Errors"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /errors/away/down:
+    post:
+      tags:
+        - "Errors"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /errors/home/up:
+    post:
+      tags:
+        - "Errors"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /errors/home/down:
+    post:
+      tags:
+        - "Errors"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+  /lob/away/up:
+    post:
+      tags:
+        - "LOB"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /lob/away/down:
+    post:
+      tags:
+        - "LOB"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /lob/home/up:
+    post:
+      tags:
+        - "LOB"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /lob/home/down:
+    post:
+      tags:
+        - "LOB"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+  /strikeout/toggle:
+    post:
+      tags:
+        - "Displays"
+      summary: "Toggles the Strikeout Display"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /homerun/toggle:
+    post:
+      tags:
+        - "Displays"
+      summary: "Toggles the Homerun Display"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+
+
+
+components:
+  securitySchemes:
+    API:
+      type: apiKey
+      in: header
+      name: Authorization
