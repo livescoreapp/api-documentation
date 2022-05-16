@@ -1,0 +1,68 @@
+{
+    "id": "YzdhMmFjMWNiNTkxNGJlODlkNGUxMTgxNzlhMmEwZjQ=",
+    "state": "PLAYING",
+    "start": "2022-04-04T18:22:40.993Z",
+    "end": null,
+    "configuration": {
+        "matchTitle": "",
+        "maxSets": 3,
+        "pointScoreMode": false,
+        "finalSetTiebreaker": true,
+        "finalSetTiebreakScore": 6,
+        "serveSpeedUnit": "MPH",
+        "autoServeChange": true,
+        "text1": ""
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "rank": ""
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "rank": ""
+    },
+    "points": {
+        "away": "LOVE",
+        "home": "LOVE"
+    },
+    "currentSet": {
+        "nr": 2,
+        "gamesAway": 3,
+        "gamesHome": 2,
+        "tieBreak": false,
+        "tieBreakAway": 0,
+        "tieBreakHome": 0
+    },
+    "sets": [
+        {
+            "nr": 1,
+            "gamesAway": 0,
+            "gamesHome": 0,
+            "tieBreak": false,
+            "tieBreakAway": 0,
+            "tieBreakHome": 0
+        },
+        {
+            "nr": 2,
+            "gamesAway": 3,
+            "gamesHome": 2,
+            "tieBreak": false,
+            "tieBreakAway": 0,
+            "tieBreakHome": 0
+        }
+    ],
+    "isTieBreaker": false,
+    "serve": "HOME",
+    "serveSpeed": {
+        "current": 34,
+        "previous": 0
+    },
+    "displays": {
+        "breakpoint": false,
+        "matchpoint": false,
+        "setpoint": false,
+        "tiebreak": true
+    }
+}

@@ -1,0 +1,61 @@
+type: object
+properties:
+  teamAway:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "PL1"
+      nameFull:
+        type: string
+        default: "PLAYER NAME 1"
+  teamHome:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "PL2"
+      nameFull:
+        type: string
+        default: "PLAYER NAME 2"
+  points:
+    type: object
+    properties:
+      away:
+        type: string
+      home:
+        type: string
+  set:
+    type: object
+    properties:
+      nr:
+        type: integer
+        default: 1
+      gamesAway:
+        type: integer
+      gamesHome:
+        type: integer
+  serve:
+    type: object
+    properties:
+      side:
+        type: string
+        default: "away"
+      serveSpeed:
+        type: integer
+  displays:
+    type: object
+    properties:
+      side:
+      breakpoint:
+        type: boolean
+        default: false
+      matchpoint:
+        type: boolean
+        default: false
+      setpoint:
+        type: boolean
+        default: false
+      tiebreak:
+        type: boolean
+        default: false

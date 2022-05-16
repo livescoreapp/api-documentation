@@ -1,0 +1,135 @@
+type: object
+properties:
+  teamAway:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM1"
+      nameFull:
+        type: string
+        default: "TEAM NAME 1"
+      score:
+        type: integer
+  teamHome:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM2"
+      nameFull:
+        type: string
+        default: "TEAM NAME 2"
+      score:
+        type: integer
+  period:
+    type: string
+    default: "1"
+  time:
+    type: object
+    properties:
+      seconds:
+        type: integer
+  intermissions:
+    type: object
+    properties:
+      seconds:
+        type: integer
+  shots:
+    type: object
+    properties:
+      away:
+        type: integer
+      home:
+        type: integer
+  emptyNet:
+    type: object
+    properties:
+      away:
+        type: boolean
+        default: false
+      home:
+        type: boolean
+        default: false
+  displays:
+    type: object
+    properties:
+      goalAway:
+        type: boolean
+        default: false
+      goalHome:
+        type: boolean
+        default: false
+      delayedPenaltyAway:
+        type: boolean
+        default: false
+      delayedPenaltyHome:
+        type: boolean
+        default: false
+  penalties:
+    type: object
+    properties:
+      away1:
+        type: object
+        properties:
+          playerNr:
+            type: string
+            default: ""
+          seconds:
+            type: integer
+      away2:
+        type: object
+        properties:
+          playerNr:
+            type: string
+            default: ""
+          seconds:
+            type: integer
+      away3:
+        type: object
+        properties:
+          playerNr:
+            type: string
+            default: ""
+          seconds:
+            type: integer
+      away4:
+        type: object
+        properties:
+          playerNr:
+            type: string
+            default: ""
+          seconds:
+            type: integer
+      home1:
+        type: object
+        properties:
+          playerNr:
+            type: string
+            default: ""
+          seconds:
+            type: integer
+      home2:
+        type: object
+        properties:
+          playerNr:
+            type: string
+            default: ""
+          seconds:
+            type: integer
+      home3:
+        type: object
+        properties:
+          playerNr:
+            type: string
+            default: ""
+          seconds:
+            type: integer
+      home4:
+        type: object
+        properties:
+          playerNr:
+            type: string
+            default: ""
+          seconds:
+            type: integer

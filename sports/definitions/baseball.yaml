@@ -1,0 +1,81 @@
+type: object
+properties:
+  teamAway:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM1"
+      nameFull:
+        type: string
+        default: "TEAM NAME 1"
+      runs:
+        type: integer
+  teamHome:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM2"
+      nameFull:
+        type: string
+        default: "TEAM NAME 2"
+      runs:
+        type: integer
+  inning:
+    type: object
+    properties:
+      nr:
+        type: integer
+      top:
+        type: boolean
+        default: true
+  outs:
+    type: integer
+  strikes:
+    type: integer
+  balls:
+    type: integer
+  bases:
+    type: object
+    properties:
+      base1:
+        type: boolean
+        default: false
+      base2:
+        type: boolean
+        default: false
+      base3:
+        type: boolean
+        default: false
+  stats:
+    type: object
+    properties:
+      errorsAway:
+        type: integer
+      errorsHome:
+        type: integer
+      hitsAway:
+        type: integer
+      hitsHome:
+        type: integer
+      lobAway:
+        type: integer
+      lobHome:
+        type: integer
+  pitching:
+    type: object
+    properties:
+      pitchCount:
+        type: integer
+      pitchSpeed:
+        type: integer
+  displays:
+    type: object
+    properties:
+      strikeout:
+        type: boolean
+        default: false
+      homerun:
+        type: boolean
+        default: false

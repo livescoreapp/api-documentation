@@ -1,0 +1,79 @@
+type: object
+properties:
+  teamAway:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM1"
+      nameFull:
+        type: string
+        default: "TEAM NAME 1"
+      score:
+        type: integer
+  teamHome:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM2"
+      nameFull:
+        type: string
+        default: "TEAM NAME 2"
+      score:
+        type: integer
+  period:
+    type: string
+    default: "1"
+  fouls:
+    type: object
+    properties:
+      away:
+        type: integer
+      home:
+        type: integer
+  emptyGoal:
+    type: object
+    properties:
+      away:
+        type: boolean
+        default: false
+      home:
+        type: boolean
+        default: false
+  time:
+    type: object
+    properties:
+      seconds:
+        type: integer
+  exclusions:
+    type: object
+    properties:
+      away1:
+        type: object
+        properties:
+          playerNr:
+            type: string
+          seconds:
+            type: integer
+      away2:
+        type: object
+        properties:
+          playerNr:
+            type: string
+          seconds:
+            type: integer
+      home1:
+        type: object
+        properties:
+          playerNr:
+            type: string
+          seconds:
+            type: integer
+      home2:
+        type: object
+        properties:
+          playerNr:
+            type: string
+          seconds:
+            type: integer

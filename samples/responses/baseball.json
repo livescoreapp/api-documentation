@@ -1,0 +1,90 @@
+{
+    "id": "Y2Q5NTIzODk5NWNmNDg2NzhlZmVmMTdiNzU3ZmM0Njg=",
+    "state": "WARMUP",
+    "start": null,
+    "end": null,
+    "configuration": {
+        "maxInnings": 9,
+        "autoPitchCount": false,
+        "pitchSpeedUnit": "MPH",
+        "keepPitchSpeedArmed": false
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "runs": 3,
+        "roster": []
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "runs": 0,
+        "roster": [
+            {
+                "id": "MmVkMGY0M2Y1ODg0NGZmNjlhODU1MGRkZTFjMWJkM2Q=",
+                "name": "ENTER NAME",
+                "nr": "",
+                "fieldingPos": "Bench",
+                "battingPos": 1
+            },
+            {
+                "id": "OGY2MWY4ODIwZjdmNGRjZGI5Y2FlYWRiYzM4MTA4ZmM=",
+                "name": "ENTER NAME",
+                "nr": "",
+                "fieldingPos": "P",
+                "battingPos": 2
+            }
+        ]
+    },
+    "inning": {
+        "nr": 1,
+        "top": true
+    },
+    "outs": 0,
+    "strikes": 0,
+    "balls": 0,
+    "bases": {
+        "base1": false,
+        "base2": false,
+        "base3": false
+    },
+    "batter": {
+        "currentPos": 1,
+        "player": null
+    },
+    "stats": {
+        "errorsAway": 0,
+        "errorsHome": 0,
+        "hitsAway": 0,
+        "hitsHome": 0,
+        "lobAway": 0,
+        "lobHome": 0
+    },
+    "pitching": {
+        "pitcher": {
+            "id": "OGY2MWY4ODIwZjdmNGRjZGI5Y2FlYWRiYzM4MTA4ZmM=",
+            "name": "ENTER NAME",
+            "nr": "",
+            "fieldingPos": "P",
+            "battingPos": 2
+        },
+        "pitchCount": 0,
+        "pitchCountAway": 0,
+        "pitchCountHome": 0,
+        "pitchSpeed": {
+            "current": 0,
+            "previous": 0
+        }
+    },
+    "lineScore": [
+        {
+            "nr": 1,
+            "runsAway": 3,
+            "runsHome": 0
+        }
+    ],
+    "displays": {
+        "strikeout": false,
+        "homerun": false
+    }
+}

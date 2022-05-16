@@ -1,0 +1,61 @@
+{
+    "id": "ZjYzMzQyN2JjYjQzNDgzZmE2NDM1ODI0N2NiZTNlNzc=",
+    "state": "WARMUP",
+    "start": "2022-04-03T21:02:04.029Z",
+    "end": "2022-04-03T21:05:16.648Z",
+    "configuration": {
+        "maxOvertimeSeconds": 300,
+        "maxPeriodTimeSeconds": 720,
+        "text1": ""
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "score": 0
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "score": 0
+    },
+    "period": "FIRST",
+    "time": {
+        "seconds": 0,
+        "running": false,
+        "typeIncreasing": true
+    },
+    "emptyGoal": {
+        "away": false,
+        "home": false
+    },
+    "fouls": {
+        "away": 0,
+        "home": 0
+    },
+    "exclusions": {
+        "away1": {
+            "active": true,
+            "playerNr": "33",
+            "seconds": 120,
+            "secondsStarted": 0
+        },
+        "away2": {
+            "active": false,
+            "playerNr": "",
+            "seconds": 0,
+            "secondsStarted": null
+        },
+        "home1": {
+            "active": true,
+            "playerNr": "22",
+            "seconds": 120,
+            "secondsStarted": 0
+        },
+        "home2": {
+            "active": false,
+            "playerNr": "",
+            "seconds": 0,
+            "secondsStarted": null
+        }
+    }
+}

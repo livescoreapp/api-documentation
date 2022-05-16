@@ -1,0 +1,36 @@
+{
+    "id": "NGEzMDUxMGJlOGJlNDUzMWFmMjdmODUxZmRiMWE5MDg=",
+    "state": "WARMUP",
+    "start": null,
+    "end": null,
+    "configuration": {
+        "gameMode": "SOCCER",
+        "maxOvertimeSeconds": 900,
+        "maxPeriodSeconds": 2700,
+        "clockMode": "GAME_CLOCK",
+        "text1": ""
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "goals": 0,
+        "prevGoals": 0
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "goals": 0,
+        "prevGoals": 0
+    },
+    "period": "FIRST",
+    "additionalSeconds": 0,
+    "time": {
+        "seconds": 2700,
+        "running": false,
+        "additionalEnabled": false
+    },
+    "shots": {
+        "away": 0,
+        "home": 0
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "id": "ZDVhYTczZWJmZTU4NDdhZTkxN2Y1ZGY5NjVmN2FiMmY=",
+    "state": "PLAYING",
+    "start": "2022-04-04T21:54:45.782Z",
+    "end": null,
+    "configuration": {
+        "code": "LEAGUE",
+        "maxPeriodSeconds": 0,
+        "maxTimeEnabled": false,
+        "tackleTurnoverThreshold": null,
+        "text1": ""
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "score": 4
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "score": 4
+    },
+    "period": "FIRST",
+    "time": {
+        "seconds": 0,
+        "running": false
+    },
+    "cards": {
+        "awayRed": 2,
+        "awayYellow": 0,
+        "homeRed": 0,
+        "homeYellow": 1
+    },
+    "statistics": {
+        "turnoversAway": 0,
+        "turnoversHome": 0,
+        "errorsAway": 0,
+        "errorsHome": 1,
+        "lineBreaksAway": 0,
+        "lineBreaksHome": 0,
+        "penaltiesConcededAway": 0,
+        "penaltiesConcededHome": 2,
+        "possessionAwayPercentage": 0,
+        "possessionHomePercentage": 100,
+        "tacklesAway": 0,
+        "tacklesHome": 0,
+        "tacklesMissedAway": 1,
+        "tacklesMissedHome": 1,
+        "territoryAwayPercentage": 0,
+        "territoryHomePercentage": 100
+    },
+    "scores": {
+        "behindsAway": 0,
+        "behindsHome": 0,
+        "conversionAway": 0,
+        "conversionHome": 2,
+        "dropGoalsAway": 0,
+        "dropGoalsHome": 0,
+        "goalsAway": 0,
+        "goalsHome": 0,
+        "penaltiesAway": 0,
+        "penaltiesHome": 0,
+        "superGoalsAway": 0,
+        "superGoalsHome": 0,
+        "triesAway": 1,
+        "triesHome": 0
+    },
+    "flag": true,
+    "setTackles": 2,
+    "metresGained": 0,
+    "possession": "AWAY",
+    "territory": "AWAY"
+}

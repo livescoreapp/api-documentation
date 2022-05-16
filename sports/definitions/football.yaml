@@ -1,0 +1,71 @@
+type: object
+properties:
+  teamAway:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM1"
+      nameFull:
+        type: string
+        default: "TEAM NAME 1"
+      record:
+        type: string
+      score:
+        type: integer
+  teamHome:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM2"
+      nameFull:
+        type: string
+        default: "TEAM NAME 2"
+      record:
+        type: string
+      score:
+        type: integer
+  quarter:
+    type: string
+    default: "1"
+  time:
+    type: object
+    properties:
+      seconds:
+        type: integer
+  playclock:
+    type: object
+    properties:
+      seconds:
+        type: integer
+  downs:
+    type: object
+    properties:
+      down:
+        type: integer
+        default: 1
+      yards:
+        type: integer
+        default: 10
+      goal:
+        type: boolean
+        default: false
+      visible:
+        type: boolean
+        default: true
+  lineOfScrimmage:
+    type: integer
+    default: 50
+  flag:
+    type: boolean
+    default: false
+  possession:
+    type: string
+    default: "AWAY"
+  displays:
+    type: object
+    properties:
+      touchdown:
+        type: boolean
+        default: false

@@ -1,0 +1,46 @@
+type: object
+properties:
+  teamAway:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM1"
+      nameFull:
+        type: string
+        default: "TEAM NAME 1"
+  teamHome:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM2"
+      nameFull:
+        type: string
+        default: "TEAM NAME 2"
+  inning:
+    type: object
+    properties:
+      nr:
+        type: integer
+      top:
+        type: boolean
+        default: true
+  bowler:
+    type: string
+  batters:
+    type: object
+    properties:
+      batter1:
+        type: string
+      batter2:
+        type: string
+  displays:
+    type: object
+    properties:
+      out:
+        type: boolean
+        default: false
+      freehit:
+        type: boolean
+        default: false

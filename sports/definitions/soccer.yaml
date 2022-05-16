@@ -1,0 +1,47 @@
+type: object
+properties:
+  teamAway:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEA1"
+      nameFull:
+        type: string
+        default: "TEAM 1"
+      goals:
+        type: number
+  teamHome:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEA2"
+      nameFull:
+        type: string
+        default: "TEAM 2"
+      goals:
+        type: number
+  period:
+    type: string
+    default: "1"
+  time:
+    type: object
+    properties:
+      seconds:
+        type: integer
+  additionalTime:
+    type: object
+    properties:
+      seconds:
+        type: integer
+      enabled:
+        type: boolean
+        default: false
+  shots:
+    type: object
+    properties:
+      away:
+        type: integer
+      home:
+        type: integer

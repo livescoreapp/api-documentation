@@ -1,0 +1,70 @@
+type: object
+properties:
+  teamAway:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM1"
+      nameFull:
+        type: string
+        default: "TEAM NAME 1"
+      score:
+        type: integer
+  teamHome:
+    type: object
+    properties:
+      name:
+        type: string
+        default: "TEAM2"
+      nameFull:
+        type: string
+        default: "TEAM NAME 2"
+      score:
+        type: integer
+  period:
+    type: string
+    default: "Q1"
+  time:
+    type: object
+    properties:
+      seconds:
+        type: integer
+  shotclock:
+    type: object
+    properties:
+      seconds:
+        type: integer
+  bonus:
+    type: object
+    properties:
+      away:
+        type: boolean
+        default: false
+      home:
+        type: boolean
+        default: false
+  fouls:
+    type: object
+    properties:
+      away:
+        type: integer
+      home:
+        type: integer
+  possession:
+    type: object
+    properties:
+      away:
+        type: boolean
+        default: false
+      home:
+        type: boolean
+        default: false
+  intermission:
+    type: object
+    properties:
+      text:
+        type: string
+      visible:
+        type: boolean
+        default: false

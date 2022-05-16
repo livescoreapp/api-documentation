@@ -1,0 +1,135 @@
+{
+    "id": "OTA0YjljNzY3ZDk1NGRkMDlhNGVhOTM0ZTdmZjMzNDQ=",
+    "state": "PLAYING",
+    "start": "2022-04-04T21:20:17.880Z",
+    "end": null,
+    "configuration": {
+        "mode": "INDOOR",
+        "maxOvertimeSeconds": 300,
+        "maxPeriodTimeSeconds": 1200,
+        "maxIntermissionClockSeconds": 930,
+        "europeMode": false,
+        "autoTimeStop": false,
+        "goalDisplayText": "",
+        "text1": ""
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "score": 0
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "score": 1
+    },
+    "period": "FIRST",
+    "time": {
+        "seconds": 1167,
+        "running": true
+    },
+    "shots": {
+        "away": 0,
+        "home": 0
+    },
+    "emptyNet": {
+        "away": false,
+        "home": false
+    },
+    "timeouts": {
+        "away": false,
+        "home": false
+    },
+    "intermission": {
+        "seconds": 930,
+        "running": false
+    },
+    "displays": {
+        "goal": false,
+        "goalAway": false,
+        "goalHome": false,
+        "delayedPenaltyAway": false,
+        "delayedPenaltyHome": false
+    },
+    "powerplay": {
+        "active": true,
+        "text": " PP",
+        "playersOnField": 3,
+        "player": {
+            "active": true,
+            "penalty": "MINOR",
+            "player": "",
+            "seconds": 10,
+            "secondsStarted": 1167
+        }
+    },
+    "penalties": {
+        "away1": {
+            "active": true,
+            "penalty": "MINOR",
+            "player": "",
+            "seconds": 10,
+            "secondsStarted": 1167
+        },
+        "away2": {
+            "active": true,
+            "penalty": "MINOR",
+            "player": "",
+            "seconds": 87,
+            "secondsStarted": 1167
+        },
+        "away3": {
+            "active": false,
+            "penalty": "MINOR",
+            "player": "",
+            "seconds": 0,
+            "secondsStarted": null
+        },
+        "away4": {
+            "active": true,
+            "penalty": "MINOR",
+            "player": "",
+            "seconds": 87,
+            "secondsStarted": 1167
+        },
+        "home1": {
+            "active": true,
+            "penalty": "DOUBLE_MINOR",
+            "player": "",
+            "seconds": 207,
+            "secondsStarted": 1167
+        },
+        "home2": {
+            "active": true,
+            "penalty": "MAJOR",
+            "player": "",
+            "seconds": 267,
+            "secondsStarted": 1167
+        },
+        "home3": {
+            "active": true,
+            "penalty": "DOUBLE_MINOR",
+            "player": "",
+            "seconds": 207,
+            "secondsStarted": 1167
+        },
+        "home4": {
+            "active": true,
+            "penalty": "MINOR",
+            "player": "",
+            "seconds": 87,
+            "secondsStarted": 1167
+        }
+    },
+    "shootout": {
+        "totalAway": 0,
+        "totalHome": 0,
+        "rounds": [
+            {
+                "round": 1,
+                "away": null,
+                "home": null
+            }
+        ]
+    }
+}

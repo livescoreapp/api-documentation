@@ -1,0 +1,46 @@
+{
+    "id": "MmE3ZWM0MjQ0ZTU1NGI4NWE0YWE3ZDgxYjU3MmJjZTk=",
+    "state": "WARMUP",
+    "start": "2022-04-03T20:33:01.713Z",
+    "end": "2022-04-03T20:33:07.063Z",
+    "configuration": {
+        "mode": "FOOTBALL",
+        "autoStopTime": false,
+        "maxQuarterSeconds": 900,
+        "maxTimeouts": 3,
+        "overtimeMode": "SUDDENDEATH",
+        "text1": ""
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "score": 0,
+        "record": ""
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "score": 0,
+        "record": ""
+    },
+    "quarter": "FIRST",
+    "time": {
+        "seconds": 900,
+        "running": false
+    },
+    "playclock": {
+        "seconds": 25,
+        "running": false
+    },
+    "downs": {
+        "down": 1,
+        "yards": 10,
+        "goal": false,
+        "visible": true
+    },
+    "flag": false,
+    "possession": "AWAY",
+    "displays": {
+        "touchdown": false
+    }
+}

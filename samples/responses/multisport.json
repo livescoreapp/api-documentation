@@ -1,0 +1,38 @@
+{
+    "id": "MWQ5M2Y4YTEwZjNmNDVlOWJkYmIwMjRlNzkxYjBmY2M=",
+    "state": "WARMUP",
+    "start": "2022-04-04T20:43:08.271Z",
+    "end": "2022-04-04T20:43:13.214Z",
+    "configuration": {
+        "autoChangeSide": false,
+        "flexPointMode": false,
+        "maxShotClockSeconds": 20,
+        "syncClocks": false,
+        "text1": "GAME SCOREBOARD"
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "score": 0
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "score": 0
+    },
+    "period": 1,
+    "games": {
+        "away": 0,
+        "home": 0
+    },
+    "side": "AWAY",
+    "time": {
+        "seconds": 0,
+        "running": false
+    },
+    "shotclock": {
+        "seconds": 20,
+        "running": false,
+        "visible": true
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "id": "YjZiZTMzNzgwNGMxNGE4MThjYWRmNmRiNDdlOTVmMDk=",
+    "state": "WARMUP",
+    "start": "2022-03-31T22:13:12.617Z",
+    "end": "2022-03-31T22:18:38.462Z",
+    "configuration": {
+        "maxOvers": 20,
+        "tossWinner": "AWAY",
+        "text1": ""
+    },
+    "teamAway": {
+        "name": "TEAM A",
+        "nameFull": "",
+        "runs": 2,
+        "roster": [
+            {
+                "id": "ZjYxZjFlMjY0NDNmNDJiYmIzYWJkZDg3ZjcwOWM1NGE=",
+                "name": "ENTER NAME",
+                "nr": 0
+            },
+            {
+                "id": "MzVkOTdlM2FlZTUyNDcyMGE0NWQyOTM4MDY0YTcwOTM=",
+                "name": "ENTER NAME",
+                "nr": 0
+            },
+            {
+                "id": "YjhiNTA0MTI2MjgwNDQ4Mzg2ZjRhMGM1Mjg1MmEzNTY=",
+                "name": "ENTER NAME",
+                "nr": 0
+            }
+        ]
+    },
+    "teamHome": {
+        "name": "TEAM B",
+        "nameFull": "",
+        "runs": 0,
+        "roster": [
+            {
+                "id": "N2E4YmE3N2FkOGU5NDM2ZDg5NGRmYTE4ODU0ZGJhZDA=",
+                "name": "ENTER NAME",
+                "nr": 0
+            },
+            {
+                "id": "ODI2MzNiZWRmYThmNDE4OThiYmI4YjFmZWVkYmE4NDc=",
+                "name": "ENTER NAME",
+                "nr": 0
+            },
+            {
+                "id": "N2FlZjBkZjI3MzY0NDY5YzlkYzNmZjQ5YWFhNWRmNjI=",
+                "name": "ENTER NAME",
+                "nr": 0
+            }
+        ]
+    },
+    "inning": {
+        "nr": 2,
+        "top": false
+    },
+    "bowler": null,
+    "batter1": null,
+    "batter2": null,
+    "over": {
+        "nr": 1,
+        "score": 0,
+        "complete": false,
+        "balls": []
+    },
+    "wickets": 0,
+    "ballsLeft": 114,
+    "runRate": 0,
+    "requiredRunRate": 0.16,
+    "requiredRuns": 3,
+    "displays": {
+        "freehit": false,
+        "out": false
+    },
+    "overs": {
+        "away": [
+            {
+                "nr": 0,
+                "score": 2,
+                "complete": true,
+                "balls": [
+                    {
+                        "delivery": "RUN",
+                        "count": 1,
+                        "complete": true,
+                        "free": false,
+                        "batter": "ZjYxZjFlMjY0NDNmNDJiYmIzYWJkZDg3ZjcwOWM1NGE=",
+                        "bowler": "ODI2MzNiZWRmYThmNDE4OThiYmI4YjFmZWVkYmE4NDc="
+                    },
+                    {
+                        "delivery": "WICKET",
+                        "count": 1,
+                        "complete": true,
+                        "free": false,
+                        "batter": "YjhiNTA0MTI2MjgwNDQ4Mzg2ZjRhMGM1Mjg1MmEzNTY=",
+                        "bowler": "ODI2MzNiZWRmYThmNDE4OThiYmI4YjFmZWVkYmE4NDc="
+                    },
+                    {
+                        "delivery": "BYE",
+                        "count": 1,
+                        "complete": true,
+                        "free": false,
+                        "batter": "YjhiNTA0MTI2MjgwNDQ4Mzg2ZjRhMGM1Mjg1MmEzNTY=",
+                        "bowler": "ODI2MzNiZWRmYThmNDE4OThiYmI4YjFmZWVkYmE4NDc="
+                    },
+                    {
+                        "delivery": "RUNOUT",
+                        "count": 1,
+                        "complete": true,
+                        "free": true,
+                        "batter": "ZjYxZjFlMjY0NDNmNDJiYmIzYWJkZDg3ZjcwOWM1NGE=",
+                        "bowler": "ODI2MzNiZWRmYThmNDE4OThiYmI4YjFmZWVkYmE4NDc="
+                    }
+                ]
+            },
+            {
+                "nr": 1,
+                "score": 0,
+                "complete": false,
+                "balls": []
+            }
+        ],
+        "home": [
+            {
+                "nr": 0,
+                "score": 0,
+                "complete": true,
+                "balls": [
+                    {
+                        "delivery": "RUN",
+                        "count": 1,
+                        "complete": false,
+                        "free": false,
+                        "batter": "",
+                        "bowler": ""
+                    }
+                ]
+            },
+            {
+                "nr": 1,
+                "score": 0,
+                "complete": false,
+                "balls": []
+            }
+        ]
+    }
+}

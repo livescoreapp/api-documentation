@@ -1,0 +1,48 @@
+{
+    "id": "MzliN2IwN2NjNjdiNDk4MDkwY2U1YmQ5OTc0YTgyNmI=",
+    "state": "FINAL",
+    "start": "2022-04-04T20:30:35.509Z",
+    "end": "2022-04-04T20:30:37.092Z",
+    "configuration": {
+        "matchTitle": "",
+        "maxRounds": 3,
+        "maxSecondsCurrentRound": 300,
+        "maxSecondsOT1": 60,
+        "maxSecondsOT23": 30,
+        "maxSecondsOT4": 60,
+        "maxSecondsRegularRound": 300,
+        "text1": "",
+        "weightClass": ""
+    },
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "records": "",
+        "scoreFighter": 0,
+        "scoreTeam": 0
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "records": "",
+        "scoreFighter": 0,
+        "scoreTeam": 0
+    },
+    "round": 1,
+    "time": {
+        "seconds": 300,
+        "running": false
+    },
+    "shotclock": {
+        "seconds": 30,
+        "running": false
+    },
+    "ridingTime": {
+        "seconds": 0,
+        "running": false,
+        "ridingTime1Active": false,
+        "ridingTime1Visible": false,
+        "ridingTime2Active": false,
+        "ridingTime2Visible": false
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "teamAway": {
+        "name": "",
+        "nameFull": "",
+        "runs": 4
+    },
+    "teamHome": {
+        "name": "",
+        "nameFull": "",
+        "runs": 4
+    },
+    "inning": {
+        "nr": 1,
+        "top": true
+    },
+    "outs": 0,
+    "strikes": 0,
+    "balls": 0,
+    "bases": {
+        "base1": false,
+        "base2": false,
+        "base3": false
+    },
+    "stats": {
+        "errorsAway": 0,
+        "errorsHome": 0,
+        "hitsAway": 0,
+        "hitsHome": 0,
+        "lobAway": 0,
+        "lobHome": 0
+    },
+    "pitching": {
+        "pitchCount": 0,
+        "pitchSpeed": 0
+    },
+    "displays": {
+        "strikeout": false,
+        "homerun": false
+    }
+}

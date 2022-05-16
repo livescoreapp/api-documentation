@@ -1,0 +1,56 @@
+{
+    "id": "MDUzMzA0ZjI0YmM1NDhmZGIwMzgwZDJhNzY1OWZkNDU=",
+    "state": "WARMUP",
+    "start": null,
+    "end": null,
+    "configuration": {
+        "europeMode": false,
+        "periodMode": "QUARTERS",
+        "maxFouls": 5,
+        "maxTimeouts": 6,
+        "maxOvertimeSeconds": 300,
+        "maxPeriodSeconds": 720,
+        "maxShotclockSeconds": 24,
+        "maxShotclockSecondsFoul": 14,
+        "foulsResetMode": "QUARTER"
+    },
+    "teamAway": {
+        "name": "athletics",
+        "nameFull": "",
+        "record": "",
+        "score": 0
+    },
+    "teamHome": {
+        "name": "bull",
+        "nameFull": "",
+        "record": "",
+        "score": 0
+    },
+    "period": "QUARTER1",
+    "time": {
+        "seconds": 720,
+        "running": false
+    },
+    "shotclock": {
+        "seconds": 24,
+        "running": false,
+        "visible": true,
+        "visibleAt": 8
+    },
+    "bonus": {
+        "away": false,
+        "home": false
+    },
+    "fouls": {
+        "away": 0,
+        "home": 0
+    },
+    "intermission": {
+        "text": "",
+        "visible": false
+    },
+    "possession": {
+        "away": false,
+        "home": false
+    }
+}
