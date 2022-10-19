@@ -54,9 +54,27 @@ properties:
       visible:
         type: boolean
         default: true
-  lineOfScrimmage:
-    type: integer
-    default: 50
+  los:
+    type: object
+    properties:
+      value:
+        type: integer
+        default: 50
+      visible:
+        type: boolean
+        default: true
+  timeouts:
+    type: object
+    properties:
+      away:
+        type: integer
+        default: 7
+      home:
+        type: integer
+        default: 7
+      flag:
+        type: boolean
+        default: false
   flag:
     type: boolean
     default: false

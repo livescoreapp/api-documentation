@@ -2,7 +2,7 @@ openapi: "3.0.0"
 
 info:
   title: "Live Score Baseball API"
-  version: "1.0"
+  version: "1.1"
   description: ""
 
 servers:
@@ -170,7 +170,7 @@ paths:
   /strikes/up:
     post:
       tags:
-        - "Strikes"
+        - "At Bat"
       summary: "Increase the Strikes"
       security:
         - API: [ ]
@@ -180,18 +180,17 @@ paths:
   /strikes/down:
     post:
       tags:
-        - "Strikes"
+        - "At Bat"
       summary: "Decrease the Strikes"
       security:
         - API: [ ]
       responses:
         "200":
           description: "successful operation"
-
   /balls/up:
     post:
       tags:
-        - "Balls"
+        - "At Bat"
       summary: "Increase the Balls"
       security:
         - API: [ ]
@@ -201,8 +200,28 @@ paths:
   /balls/down:
     post:
       tags:
-        - "Balls"
+        - "At Bat"
       summary: "Decrease the Balls"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /walk:
+    post:
+      tags:
+        - "At Bat"
+      summary: "Moves the batter to 1st base and resets everything"
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /strikeout:
+    post:
+      tags:
+        - "At Bat"
+      summary: "Gives the batter a strikeout and resets everything"
       security:
         - API: [ ]
       responses:

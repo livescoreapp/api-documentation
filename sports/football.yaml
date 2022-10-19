@@ -2,7 +2,7 @@ openapi: "3.0.0"
 
 info:
   title: "Live Score Football API"
-  version: "1.0"
+  version: "1.1"
   description: ""
 
 servers:
@@ -173,6 +173,16 @@ paths:
       responses:
         "200":
           description: "successful operation"
+  /downs-los/visibility/toggle:
+    post:
+      tags:
+        - "Downs"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
 
   /los:
     post:
@@ -189,6 +199,34 @@ paths:
               properties:
                 yards:
                   default: 50
+      responses:
+        "200":
+          description: "successful operation"
+  /los/visibility/toggle:
+    post:
+      tags:
+        - "Line of Scrimmage"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /los/visibility:
+    post:
+      tags:
+        - "Line of Scrimmage"
+      summary: ""
+      security:
+        - API: [ ]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                visible:
+                  default: true
       responses:
         "200":
           description: "successful operation"
@@ -538,6 +576,16 @@ paths:
         "200":
           description: "successful operation"
   /timeout/home/down:
+    post:
+      tags:
+        - "Timeouts"
+      summary: ""
+      security:
+        - API: [ ]
+      responses:
+        "200":
+          description: "successful operation"
+  /timeout/visibility/toggle:
     post:
       tags:
         - "Timeouts"
