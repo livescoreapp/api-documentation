@@ -16,12 +16,14 @@
     "teamAway": {
         "name": "",
         "nameFull": "",
-        "rank": ""
+        "rank": "",
+        "flag" : ""
     },
     "teamHome": {
         "name": "",
         "nameFull": "",
-        "rank": ""
+        "rank": "",
+        "flag" : ""
     },
     "points": {
         "away": "LOVE",
